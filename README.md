@@ -1,7 +1,7 @@
 # Xamarin Socket.IO demo
 ====================
 
-This project use this library https://github.com/Quobject/SocketIoClientDotNet from mattqs.
+This demo use the library SocketIoClientDotNet from mattqs. You can check it here: https://github.com/Quobject/SocketIoClientDotNet
 
 ## Instruction:
 
@@ -13,6 +13,8 @@ This project use this library https://github.com/Quobject/SocketIoClientDotNet f
 
 3) Type "npm start" and enter
 
+* Note: The code that handle the event on server is in bin/www
+
 ### Client:
 
 Open file Constants.cs in WebSocketDemo
@@ -20,6 +22,3 @@ Open file Constants.cs in WebSocketDemo
 Change HOST to your ip address (don't remove port :3000)
 
 Now open android or ios app and test.
-
-
-* Note: The code that handle the event is in bin/wwws

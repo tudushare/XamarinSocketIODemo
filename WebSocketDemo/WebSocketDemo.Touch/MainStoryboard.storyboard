@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3Sr-RA-Qlz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="EOJ-q7-Wzq">
+            <objects>
+                <viewController id="3Sr-RA-Qlz" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e5j-Bc-DRl"/>
+                        <viewControllerLayoutGuide type="bottom" id="iWI-wF-43F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2b9-OB-kMT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBB-Si-0DN">
+                                <rect key="frame" x="16" y="70" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="855-5K-gFj">
+                                <rect key="frame" x="115" y="121" width="90" height="30"/>
+                                <state key="normal" title="Click to send">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OBB-Si-0DN" firstAttribute="trailing" secondItem="2b9-OB-kMT" secondAttribute="trailingMargin" id="MVe-Bo-VVd"/>
+                            <constraint firstItem="855-5K-gFj" firstAttribute="centerX" secondItem="OBB-Si-0DN" secondAttribute="centerX" id="TMD-gW-moU"/>
+                            <constraint firstItem="855-5K-gFj" firstAttribute="top" secondItem="OBB-Si-0DN" secondAttribute="bottom" constant="21" id="qWL-3r-tSt"/>
+                            <constraint firstItem="OBB-Si-0DN" firstAttribute="leading" secondItem="2b9-OB-kMT" secondAttribute="leadingMargin" id="xFD-I9-TXV"/>
+                            <constraint firstItem="OBB-Si-0DN" firstAttribute="top" secondItem="e5j-Bc-DRl" secondAttribute="bottom" constant="50" id="xZ9-Ik-2eZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bSend" destination="855-5K-gFj" id="aSJ-j1-zA8"/>
+                        <outlet property="tfMessage" destination="OBB-Si-0DN" id="hRN-lT-hC1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sf3-gx-3yU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="534"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
